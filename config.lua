@@ -25,30 +25,27 @@ Config.Zones = {
         }
     }
 }
-
--- Vehicle deletion inside zones
+ 
 Config.DeleteVehicles = true
-
--- Kill rewards
+ 
 Config.Rewards = {
     { item = 'ammo-9', min = 15, max = 20 },
     { item = 'money', min = 1000, max = 2000 },
     { item = 'black_money', min = 1000, max = 2000 } 
 }
-  
- -- Spree Count and Sound Effects
+   
 Config.Sprees = {
-    [1] = { soundfile = 'killing_spree', text = "KILLING SPREE", color = "#007bff", shadow = "0 0 10px #007bff, 0 0 20px #3399ff" } ,
-    [2] = { soundfile = 'mega_kill', text = "MEGA KILL", color = "#00ff00", shadow = "0 0 10px #00ff00, 0 0 20px #33ff33" },
-    [3] = { soundfile = 'dominating', text = "DOMINATING", color = "#ff8800", shadow = "0 0 10px #ff8800, 0 0 20px #ffaa33" },
-    [4] = { soundfile = 'godlike', text = "GODLIKE", color = "#cc00ff", shadow = "0 0 10px #cc00ff, 0 0 20px #e066ff" },
+    [3] = { soundfile = 'killing_spree', text = "KILLING SPREE", color = "#007bff", shadow = "0 0 10px #007bff, 0 0 20px #3399ff" } ,
+    [5] = { soundfile = 'mega_kill', text = "MEGA KILL", color = "#00ff00", shadow = "0 0 10px #00ff00, 0 0 20px #33ff33" },
+    [8] = { soundfile = 'dominating', text = "DOMINATING", color = "#ff8800", shadow = "0 0 10px #ff8800, 0 0 20px #ffaa33" },
+    [10] = { soundfile = 'godlike', text = "GODLIKE", color = "#cc00ff", shadow = "0 0 10px #cc00ff, 0 0 20px #e066ff" },
 }
  
-Config.UseSpreeReward = true
--- make sure spree number are same
+Config.UseSpreeReward = true 
+
 Config.SpreeRewards = {
-    [1] = { { item = 'ammo-9', min = 25, max = 35 }, { item = 'money', min = 1500, max = 2000 } },
-    [2] = { { item = 'ammo-9', min = 35, max = 45 }, { item = 'money', min = 2500, max = 3000 } },
-    [3] = { { item = 'ammo-9', min = 45, max = 55 }, { item = 'money', min = 3500, max = 4000 } },
-    [4] = { { item = 'ammo-9', min = 55, max = 65 }, { item = 'money', min = 4500, max = 5000 } },
+    [3] = { { item = 'ammo-9', min = 25, max = 35 }, { item = 'money', min = 1500, max = 2000 } },
+    [5] = { { item = 'ammo-9', min = 35, max = 45 }, { item = 'money', min = 2500, max = 3000 } },
+    [8] = { { item = 'ammo-9', min = 45, max = 55 }, { item = 'money', min = 3500, max = 4000 } },
+    [10] = { { item = 'ammo-9', min = 55, max = 65 }, { item = 'money', min = 4500, max = 5000 } },
 }
