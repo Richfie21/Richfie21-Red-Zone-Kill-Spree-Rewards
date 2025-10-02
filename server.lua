@@ -141,7 +141,7 @@ local function handleDeath(victim, killer, killedByPlayer)
                             if dist <= zone.radius + 10.0 then
                                 TriggerClientEvent('ox_lib:notify', playerId, {
                                     title = zone.name,
-                                    description = ('%s is on a %s!'):format(GetPlayerName(killer), Config.Sprees[spreeCount]),
+                                    description = ('%s is on a %s!'):format(GetPlayerName(killer), Config.Sprees[spreeCount].text),
                                     type = 'info',
                                     position = 'middle-right'
                                 })
@@ -199,3 +199,4 @@ RegisterNetEvent("richfie21:redzone:death:qb", function(killerServerId, weapon)
 	end
 		 
 end) 
+
